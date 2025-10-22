@@ -1,0 +1,16 @@
+{"task_id":"w1-t1","paths":["gdm/daemon/gdm-manager.c"],"line_ranges":[[100,160]],"quotes":["start"],"provenance":{"repo":"gdm","commit":"mock"},"notes":""}
+{"task_id":"w1-t2","paths":["gdm/daemon/gdm-display-factory.c"],"line_ranges":[[1,80]],"quotes":["factory"],"provenance":{"repo":"gdm","commit":"mock"},"notes":""}
+{"task_id":"w1-t3","paths":["gdm/daemon/gdm-local-display.c"],"line_ranges":[[1,60]],"quotes":["local"],"provenance":{"repo":"gdm","commit":"mock"},"notes":""}
+{"task_id":"w1-t4","paths":["gdm/libgdm/gdm-user-switching.c"],"line_ranges":[[1,120]],"quotes":["switch"],"provenance":{"repo":"gdm","commit":"mock"},"notes":""}
+{"task_id":"w1-t5","paths":["gdm/common/gdm-settings.c"],"line_ranges":[[1,120]],"quotes":["settings"],"provenance":{"repo":"gdm","commit":"mock"},"notes":""}
+{"task_id":"w1-c1","paths":["gdm/daemon/gdm-manager.c"],"line_ranges":[[10,40]],"quotes":["mgr"],"provenance":{"repo":"gdm","commit":"mock"},"notes":"canary"}
+{"task_id":"w1-c2","paths":["gdm/daemon/gdm-display-factory.c"],"line_ranges":[[20,50]],"quotes":["disp"],"provenance":{"repo":"gdm","commit":"mock"},"notes":"canary"}
+{"task_id":"w1-c3","paths":["gdm/daemon/gdm-local-display.c"],"line_ranges":[[5,30]],"quotes":["local"],"provenance":{"repo":"gdm","commit":"mock"},"notes":"canary"}
+{"task_id":"w1-c4","paths":["gdm/libgdm/gdm-user-switching.c"],"line_ranges":[[1,30]],"quotes":["switch"],"provenance":{"repo":"gdm","commit":"mock"},"notes":"canary"}
+{"task_id":"w1-c5","paths":["gdm/common/gdm-settings.c"],"line_ranges":[[1,30]],"quotes":["settings"],"provenance":{"repo":"gdm","commit":"mock"},"notes":"canary"}
+{"task_id":"w1-c6","paths":["gdm/daemon/gdm-manager.c"],"line_ranges":[[200,240]],"quotes":["mgr"],"provenance":{"repo":"gdm","commit":"mock"},"notes":"canary"}
+{"task_id":"w1-c7","paths":["gdm/daemon/gdm-display-factory.c"],"line_ranges":[[160,200]],"quotes":["disp"],"provenance":{"repo":"gdm","commit":"mock"},"notes":"canary"}
+{"task_id":"w1-c8","paths":["gdm/daemon/gdm-local-display.c"],"line_ranges":[[60,100]],"quotes":["local"],"provenance":{"repo":"gdm","commit":"mock"},"notes":"canary"}
+{"task_id":"w1-c9","paths":["gdm/libgdm/gdm-user-switching.c"],"line_ranges":[[120,160]],"quotes":["switch"],"provenance":{"repo":"gdm","commit":"mock"},"notes":"canary"}
+{"task_id":"w1-c10","paths":["gdm/common/gdm-settings.c"],"line_ranges":[[120,160]],"quotes":["settings"],"provenance":{"repo":"gdm","commit":"mock"},"notes":"canary"}
+

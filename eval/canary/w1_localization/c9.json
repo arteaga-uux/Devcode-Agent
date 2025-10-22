@@ -1,0 +1,9 @@
+{
+  "id": "w1-c9",
+  "workflow": "w1_localization",
+  "inputs": {},
+  "constraints": {"must_cite": true, "exclude_dirs": []},
+  "acceptance_criteria": {"paths": ["gdm/libgdm/gdm-user-switching.c"], "line_ranges": [[120,160]], "checklist": []},
+  "tags": ["canary"]
+}
+

@@ -1,0 +1,6 @@
+task_id,path_match,line_iou_avg,line_iou_min,symbol_match,symbol_presence_rate,faithful,faithfulness_reason,label_primary,label_secondary,latency_ms,tokens_in,tokens_out,context_tokens,passed
+w1-t1,1,1.0,1.0,0,0.0,1,ok,wrong_path,symbol_absent,0,50,20,0,0
+w1-t2,1,1.0,1.0,0,0.0,1,ok,wrong_path,symbol_absent,0,50,20,0,0
+w1-t3,1,1.0,1.0,0,0.0,1,ok,wrong_path,symbol_absent,0,50,20,0,0
+w1-t4,1,1.0,1.0,0,0.0,1,ok,wrong_path,symbol_absent,0,50,20,0,0
+w1-t5,1,1.0,1.0,0,0.0,1,ok,wrong_path,symbol_absent,0,50,20,0,0

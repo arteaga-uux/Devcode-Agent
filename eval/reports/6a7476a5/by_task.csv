@@ -1,0 +1,6 @@
+context_tokens,faithful,faithfulness_reason,label_primary,label_secondary,latency_ms,line_iou_avg,line_iou_min,passed,path_match,symbol_match,symbol_presence_rate,task_id,tokens_in,tokens_out
+0,1,ok,wrong_path,symbol_absent,0,1.0,1.0,0,1,0,0.0,w1-t1,50,20
+0,1,ok,wrong_path,symbol_absent,0,1.0,1.0,0,1,0,0.0,w1-t2,50,20
+0,1,ok,wrong_path,symbol_absent,0,1.0,1.0,0,1,0,0.0,w1-t3,50,20
+0,1,ok,wrong_path,symbol_absent,0,1.0,1.0,0,1,0,0.0,w1-t4,50,20
+0,1,ok,wrong_path,symbol_absent,0,1.0,1.0,0,1,0,0.0,w1-t5,50,20

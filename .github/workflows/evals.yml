@@ -1,0 +1,37 @@
+name: Eval Canaries & Nightly
+
+on:
+  pull_request:
+  schedule:
+    - cron: '0 3 * * *'
+
+jobs:
+  canary:
+    if: github.event_name == 'pull_request'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: pip install -r requirements.txt || true
+      - name: Run canary gate
+        run: python -m eval.runner.run_localization --suite canary
+  nightly:
+    if: github.event_name == 'schedule'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: pip install -r requirements.txt || true
+      - name: Run full W1 and small W2
+        run: |
+          python -m eval.runner.run_localization --suite all
+          python -m eval.runner.run_change_impact
+      - uses: actions/upload-artifact@v4
+        with:
+          name: eval-reports-${{ github.run_id }}
+          path: eval/reports
+

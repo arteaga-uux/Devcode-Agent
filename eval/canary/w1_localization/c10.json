@@ -1,0 +1,9 @@
+{
+  "id": "w1-c10",
+  "workflow": "w1_localization",
+  "inputs": {},
+  "constraints": {"must_cite": true, "exclude_dirs": []},
+  "acceptance_criteria": {"paths": ["gdm/common/gdm-settings.c"], "line_ranges": [[120,160]], "checklist": []},
+  "tags": ["canary"]
+}
+

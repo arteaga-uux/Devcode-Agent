@@ -1,0 +1,16 @@
+{
+  "run_id": "6a7476a5",
+  "num_tasks": 5,
+  "accuracy_localization": 0.0,
+  "faithfulness_rate": 1.0,
+  "line_iou_avg": 1.0,
+  "p50_latency_ms": 0,
+  "p95_latency_ms": 0,
+  "avg_tokens_in": 50.0,
+  "avg_tokens_out": 20.0,
+  "avg_tokens_total": 70.0,
+  "canary_pass": true,
+  "accuracy_by_variant_kind": {
+    "normal": 0.0
+  }
+}

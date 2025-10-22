@@ -1,0 +1,46 @@
+# Centralized eval configuration (YAML with comments). All runners/metrics read this via typed loader.
+
+paths:
+  scenarios: eval/scenarios
+  goldens: eval/goldens
+  canary: eval/canary
+  judges: eval/judges
+  reports: eval/reports
+  registry: eval/registry
+
+thresholds:
+  w1:
+    path_match_required: true        # require at least one correct path
+    line_iou_min: 0.6               # minimum IoU per matched path
+    require_symbol_match: true      # if inputs.symbol provided, require it be referenced
+    faithfulness_required: true     # must include citations and quotes
+  canary:
+    require_100_percent: true       # all canaries must pass
+
+judge:
+  enabled_for_w2: false             # stubbed; set true to enable model judge
+  model_name: ""                   # e.g., gpt-4o-mini; can override via env EVAL_MODEL_NAME
+  max_tokens: 512
+  temperature: 0.0
+
+latency_cost_slo:
+  p95_latency_ms: 5000              # env override: EVAL_P95_LATENCY_MS
+  max_tokens_in: 20000
+  max_tokens_out: 4000
+  max_context_tokens: 50000
+
+run:
+  seed: 7
+  fail_fast_on_canary: true
+  report_format: ["json", "parquet", "csv"]
+
+sut_cli:
+  cmd: "python3 -m api.query_agent" # CLI to invoke SUT (override via EVAL_SUT_CMD)
+  extra_args: []
+  timeout_s: 60
+
+variants:
+  enabled: true
+  kinds: ["case","reexport","test","vendor","nearname"]
+  max_per_source: 2
+

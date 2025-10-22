@@ -1,0 +1,13 @@
+{
+  "id": "w1-t4",
+  "workflow": "w1_localization",
+  "inputs": {"symbol": "gdm_user_switching"},
+  "constraints": {"must_cite": true, "exclude_dirs": ["vendor/"]},
+  "acceptance_criteria": {
+    "paths": ["gdm/libgdm/gdm-user-switching.c"],
+    "line_ranges": [[1, 120]],
+    "checklist": ["user switching logic"]
+  },
+  "tags": ["libgdm"]
+}
+

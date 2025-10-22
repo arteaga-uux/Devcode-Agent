@@ -1,0 +1,6 @@
+{"id":"ci-001","verdict":"pass","score":1.0,"reasons":["anchors present","citations relevant"]}
+{"id":"ci-002","verdict":"fail","score":0.0,"reasons":["missing anchor: init"]}
+{"id":"ci-003","verdict":"pass","score":0.8,"reasons":["minor rationale gaps"]}
+# TODO: add ~20 human-labeled items with fields:
+# {"task_id":"w2-...","human_pass":0/1,"human_reasons":["..."],"judge_expected_behavior":"pass_if_all_checks"}
+

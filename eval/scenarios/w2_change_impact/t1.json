@@ -1,0 +1,15 @@
+{
+  "id": "w2-t1",
+  "workflow": "w2_change_impact",
+  "inputs": {"scenario": "enable_xdmcp", "hint": "xdmcp factory path"},
+  "constraints": {"must_cite": true, "exclude_dirs": ["vendor/","tests/"]},
+  "acceptance_criteria": {
+    "required_anchors": [
+      {"path": "gdm/daemon/gdm-display-factory.c", "kind": "file"}
+    ],
+    "forbidden_claims": ["touches PAM modules"],
+    "checklist": ["no_overclaim","anchors_present","cites_relevant"]
+  },
+  "tags": ["xdmcp","factory"]
+}
+

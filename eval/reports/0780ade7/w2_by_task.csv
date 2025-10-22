@@ -1,0 +1,4 @@
+task_id,anchors_required,anchors_found,anchor_coverage,anchors_faithful,anchor_faithful_rate,forbidden_hit,judge_used,judge_pass,faithful_overall,label_primary,label_secondary,latency_ms,tokens_in,tokens_out
+w2-t1,1,0,0.0,0,0.0,0,0,1,0,anchors_missing,,0,50,20
+w2-t2,1,0,0.0,0,0.0,0,0,1,0,anchors_missing,,0,50,20
+w2-t3,1,0,0.0,0,0.0,0,0,1,0,anchors_missing,,0,50,20

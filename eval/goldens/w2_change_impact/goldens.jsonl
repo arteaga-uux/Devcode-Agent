@@ -1,0 +1,4 @@
+{"task_id":"w2-t1","required_anchors":[{"path":"gdm/daemon/gdm-display-factory.c","kind":"file"}],"example_quotes":[{"path":"gdm/daemon/gdm-display-factory.c","start":1,"end":40,"quote":"display factory init"}],"provenance":{"repo":"gdm","commit":"mock"},"notes":""}
+{"task_id":"w2-t2","required_anchors":[{"path":"gdm/daemon/gdm-local-display.c","kind":"file"}],"example_quotes":[{"path":"gdm/daemon/gdm-local-display.c","start":1,"end":30,"quote":"local"}],"provenance":{"repo":"gdm","commit":"mock"},"notes":""}
+{"task_id":"w2-t3","required_anchors":[{"path":"gdm/libgdm/gdm-user-switching.c","kind":"file"}],"example_quotes":[{"path":"gdm/libgdm/gdm-user-switching.c","start":1,"end":40,"quote":"switch"}],"provenance":{"repo":"gdm","commit":"mock"},"notes":""}
+

@@ -1,0 +1,13 @@
+{
+  "id": "w1-t1",
+  "workflow": "w1_localization",
+  "inputs": {"symbol": "gdm_manager_start"},
+  "constraints": {"must_cite": true, "exclude_dirs": []},
+  "acceptance_criteria": {
+    "paths": ["gdm/daemon/gdm-manager.c"],
+    "line_ranges": [[100, 160]],
+    "checklist": ["manager start function located"]
+  },
+  "tags": ["manager", "startup"]
+}
+

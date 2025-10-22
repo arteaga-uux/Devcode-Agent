@@ -1,0 +1,11 @@
+{
+  "run_id": "0780ade7",
+  "w2": {
+    "anchor_coverage_mean": 0.0,
+    "anchor_faithful_rate_mean": 0.0,
+    "pass_det_core": 0.0,
+    "pass_overall": 0.0,
+    "p95_latency_ms": 0,
+    "avg_tokens": 70.0
+  }
+}

@@ -1,0 +1,31 @@
+# Core dependencies
+fastapi==0.104.1
+uvicorn[standard]==0.24.0
+pydantic==2.5.0
+
+# LangChain and AI
+langchain==0.1.0
+langchain-openai==0.0.2
+langchain-community==0.0.10
+langgraph==0.0.20
+openai==1.3.0
+
+# Vector store and embeddings
+faiss-cpu==1.7.4
+tiktoken==0.5.1
+
+# File processing
+python-dotenv==1.0.0
+pathlib2==2.3.7
+
+# Development and testing
+pytest==7.4.3
+pytest-asyncio==0.21.1
+httpx==0.25.2
+
+# Azure deployment
+azure-functions==1.18.0
+azure-identity==1.15.0
+
+
+

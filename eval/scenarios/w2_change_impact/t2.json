@@ -1,0 +1,9 @@
+{
+  "id": "w2-t2",
+  "workflow": "w2_change_impact",
+  "inputs": {"callsite": "display_factory"},
+  "constraints": {"must_cite": true, "exclude_dirs": []},
+  "acceptance_criteria": {"checklist": ["mention new worker"]},
+  "tags": ["change-impact"]
+}
+

@@ -1,0 +1,13 @@
+{
+  "id": "w1-t3",
+  "workflow": "w1_localization",
+  "inputs": {"symbol": "gdm_local_display_new"},
+  "constraints": {"must_cite": true, "exclude_dirs": ["tests/"]},
+  "acceptance_criteria": {
+    "paths": ["gdm/daemon/gdm-local-display.c"],
+    "line_ranges": [[1, 60]],
+    "checklist": ["local display creation"]
+  },
+  "tags": ["display"]
+}
+

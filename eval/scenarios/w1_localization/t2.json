@@ -1,0 +1,13 @@
+{
+  "id": "w1-t2",
+  "workflow": "w1_localization",
+  "inputs": {"symbol": "gdm_display_factory_create"},
+  "constraints": {"must_cite": true, "exclude_dirs": []},
+  "acceptance_criteria": {
+    "paths": ["gdm/daemon/gdm-display-factory.c"],
+    "line_ranges": [[1, 80]],
+    "checklist": ["display factory creation located"]
+  },
+  "tags": ["factory"]
+}
+

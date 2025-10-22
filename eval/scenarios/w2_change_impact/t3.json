@@ -1,0 +1,9 @@
+{
+  "id": "w2-t3",
+  "workflow": "w2_change_impact",
+  "inputs": {"callsite": "user_switching"},
+  "constraints": {"must_cite": true, "exclude_dirs": []},
+  "acceptance_criteria": {"checklist": ["mention session state"]},
+  "tags": ["change-impact"]
+}
+

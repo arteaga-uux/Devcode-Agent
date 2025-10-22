@@ -1,0 +1,4 @@
+accuracy_by_variant_kind,accuracy_localization,avg_tokens_in,avg_tokens_out,avg_tokens_total,canary_pass,faithfulness_rate,line_iou_avg,num_tasks,p50_latency_ms,p95_latency_ms,run_id
+{'normal': 0.0},0.0,50.0,20.0,70.0,True,1.0,1.0,5,0,0,6a7476a5
+0780ade7,0.0,0.0,70.0,0,0.0
+{'normal': 0.0},0.0,50.0,20.0,70.0,True,1.0,1.0,5,0,0,010bb10f

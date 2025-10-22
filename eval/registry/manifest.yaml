@@ -1,0 +1,4 @@
+runs: eval/registry/runs.parquet
+format_priority: [parquet, csv, json]
+version: 0
+

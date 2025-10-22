@@ -1,0 +1,9 @@
+{
+  "id": "w1-c2",
+  "workflow": "w1_localization",
+  "inputs": {},
+  "constraints": {"must_cite": true, "exclude_dirs": []},
+  "acceptance_criteria": {"paths": ["gdm/daemon/gdm-display-factory.c"], "line_ranges": [[20,50]], "checklist": []},
+  "tags": ["canary"]
+}
+
