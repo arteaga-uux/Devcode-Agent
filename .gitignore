@@ -8,3 +8,9 @@ __pycache__/
 .env
 vectorstore/
 *.zip
+__pycache__/
+*.pyc
+.DS_Store
+.env
+vectorstore/
+*.zip
