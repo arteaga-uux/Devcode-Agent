@@ -1,6 +1,8 @@
-# pipeline.py
+# full_rebuild.py
 
+import sys
 from pathlib import Path
+sys.path.insert(0, str(Path(__file__).parent.parent))
 
 from ingest_project import ingest as ingest_documents
 from chunking import chunk_documents

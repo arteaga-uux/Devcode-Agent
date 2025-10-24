@@ -1,7 +1,7 @@
 from typing import List, Tuple
 from langchain.schema import Document
-from utils.token_counter import count_tokens
-from config import CONFIG
+from .utils.token_counter import count_tokens
+from .config import CONFIG
 
 
 def format_context_from_docs(
