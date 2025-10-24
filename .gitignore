@@ -24,3 +24,13 @@ vectorstore/
 .venv/
 __pycache__/
 vectorstore/
+.env
+.DS_Store
+.venv/
+__pycache__/
+vectorstore/
+.env
+.DS_Store
+.venv/
+__pycache__/
+vectorstore/
