@@ -3,7 +3,9 @@ WORKDIR /app
 
 ENV PYTHONDONTWRITEBYTECODE=1 \
     PYTHONUNBUFFERED=1 \
-    PIP_DISABLE_PIP_VERSION_CHECK=1
+    PIP_DISABLE_PIP_VERSION_CHECK=1 \
+    SETUPTOOLS_SCM_PRETEND_VERSION=0.0.0 \
+    GIT_DISCOVERY_ACROSS_FILESYSTEM=1
 
 RUN apt-get update && apt-get install -y --no-install-recommends \
     git build-essential curl \
@@ -11,16 +13,11 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 
 RUN python -m pip install --upgrade pip setuptools wheel
 
-# Short-circuit SCM-based versioning to avoid git lookups
-ENV SETUPTOOLS_SCM_PRETEND_VERSION=0.0.0
-
-# Copy code first (lets some build backends inspect project metadata)
 COPY . .
+COPY .git .git
 
-# If SCM errors persist, uncomment next line and ensure .dockerignore doesn't exclude .git
-# COPY .git .git
-
-RUN pip install --no-cache-dir --prefer-binary -r requirements.txt
+# DEBUG: verbose to surface the failing package
+RUN pip install -v --no-cache-dir -r requirements.txt
 
 EXPOSE 8000
 CMD ["python","-m","uvicorn","my_agent.app:app","--host","0.0.0.0","--port","8000"]
