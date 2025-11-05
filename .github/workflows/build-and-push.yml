@@ -1,17 +1,33 @@
 name: Build & Push to ACR
 on: { workflow_dispatch: {} }
+env:
+  IMAGE_NAME: devcode-agent
+  IMAGE_TAG: v1
+
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - uses: docker/login-action@v3
+
+      - name: Validate secrets
+        run: |
+          if [ -z "${{ secrets.ACR_LOGIN_SERVER }}" ]; then
+            echo "ACR_LOGIN_SERVER is empty (should be like devcodeacr.azurecr.io)"; exit 1; fi
+          if [ -z "${{ secrets.ACR_USERNAME }}" ] || [ -z "${{ secrets.ACR_PASSWORD }}" ]; then
+            echo "ACR username/password missing"; exit 1; fi
+
+      - name: Docker login to ACR
+        uses: docker/login-action@v3
         with:
           registry: ${{ secrets.ACR_LOGIN_SERVER }}
           username: ${{ secrets.ACR_USERNAME }}
           password: ${{ secrets.ACR_PASSWORD }}
-      - uses: docker/build-push-action@v5
+
+      - name: Build & push
+        uses: docker/build-push-action@v5
         with:
           context: .
           push: true
-          tags: ${{ secrets.ACR_LOGIN_SERVER }}/devcode-agent:v1
+          tags: ${{ secrets.ACR_LOGIN_SERVER }}/${{ env.IMAGE_NAME }}:${{ env.IMAGE_TAG }}
+
