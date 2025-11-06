@@ -6,7 +6,7 @@ from langchain_openai import ChatOpenAI
 from langchain.schema import HumanMessage, SystemMessage
 import json
 
-from code_tools import CodeTools
+from .code_tools import CodeTools
 from context_builder import build_context_for_query
 from config import CONFIG, SOURCE_DIRECTORY, OPENAI_API_KEY
 
